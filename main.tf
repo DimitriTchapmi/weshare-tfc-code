@@ -28,7 +28,7 @@ terraform {
     organization = "wescale"
     token        = "3bKMppiEsndeiA.atlasv1.zgLSpi2uIT2FOcKN5DjZT3ly2yTdLzHPeLFc3VjlaovrmKkVGmwsfNfYKofcQfpDC4Y"
     workspaces {
-      name = "dtchapmi-tfc-code"
+      prefix = "dtchapmi-"
     }
   }
 }
