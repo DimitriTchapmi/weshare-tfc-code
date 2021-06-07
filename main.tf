@@ -25,7 +25,7 @@ resource "random_integer" "specie" {
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "wescale"
+    organization = "wescalefr"
     token        = "3bKMppiEsndeiA.atlasv1.zgLSpi2uIT2FOcKN5DjZT3ly2yTdLzHPeLFc3VjlaovrmKkVGmwsfNfYKofcQfpDC4Y"
     workspaces {
       prefix = "dtchapmi-"
