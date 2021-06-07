@@ -1,6 +1,6 @@
 locals {
-  personalities  = ["wild", "kind", "fearful", "aggressive", "hungry", "shy", "noisy", "hurt", "sleepy", "marvelous", "spooky", "sad"]
-  species        = ["rabbit", "mouse", "dog", "cat", "horse", "badger", "giraffe", "whale", "snake", "pigeon", "trout", "hyena", "eagle"]
+  personalities = ["wild", "kind", "fearful", "aggressive", "hungry", "shy", "noisy", "hurt", "sleepy", "marvelous", "spooky", "sad"]
+  species       = ["rabbit", "mouse", "dog", "cat", "horse", "badger", "giraffe", "whale", "snake", "pigeon", "trout", "hyena", "eagle"]
 
   choices = {
     personalities = join("_", local.personalities)
@@ -24,9 +24,9 @@ resource "random_integer" "specie" {
 
 terraform {
   backend "remote" {
-    hostname = "app.terraform.io"
+    hostname     = "app.terraform.io"
     organization = "wescale"
-
+    token        = "3bKMppiEsndeiA.atlasv1.zgLSpi2uIT2FOcKN5DjZT3ly2yTdLzHPeLFc3VjlaovrmKkVGmwsfNfYKofcQfpDC4Y"
     workspaces {
       name = "dtchapmi-tfc-code"
     }
